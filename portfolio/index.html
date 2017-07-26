@@ -22,6 +22,17 @@
       position: relative;
       overflow-y: scroll;
     }
+
+    .social a i {
+      color: white;
+    }
+
+    .projects {
+      min-width: 300px;
+      min-height: 100px;
+      background-color: white;
+      margin: auto 2rem 2rem auto;
+    }
   </style>
 </head>
 
@@ -43,6 +54,11 @@
         <li class="nav-item">
           <a class="nav-link" href="#projects">Projects</a>
         </li>
+      </ul>
+      <ul class="justify-content-end navbar-nav">
+        <li class="nav-item social"><a href="#" class="nav-link"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a></li>
+        <li class="nav-item social"><a href="#" class="nav-link"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a></li>
+        <li class="nav-item social"><a href="#" class="nav-link"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
       </ul>
 
     </div>
@@ -109,30 +125,21 @@
     <div class="jumbotron" id="projects">
       <h1>Projects</h1>
       <p class="lead">This example is a quick exercise to illustrate how the top-aligned navbar works. As you scroll, this navbar remains in its original position and moves with the rest of the page.</p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu fringilla nisl, vulputate finibus sem. Nulla faucibus non ante et tincidunt. Nunc nibh ipsum, viverra sit amet pulvinar nec, efficitur quis leo. Nulla eu aliquet neque, in sodales leo.
-        Vestibulum efficitur bibendum dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin ut nisi non lorem accumsan pharetra. Suspendisse vitae consectetur eros. Pellentesque mauris ligula, aliquet
-        quis laoreet ac, pulvinar nec orci. Integer malesuada, purus non laoreet mattis, tellus tellus egestas nisl, eleifend blandit eros mauris nec nibh. Morbi vitae dui sit amet nunc consectetur molestie. Phasellus vel nulla ipsum.
-      </p>
-      <p>
-        Sed aliquam, arcu quis aliquam laoreet, justo justo semper mi, eu mollis odio lectus id ex. Duis sed tincidunt nisl. Morbi commodo eu dolor quis tincidunt. Nam dignissim dignissim aliquam. Aliquam imperdiet odio eu massa luctus ultrices. Donec condimentum
-        lectus turpis, sit amet vulputate massa suscipit in. Praesent vitae sem suscipit, ornare dolor at, interdum lacus. Fusce accumsan aliquet orci. Duis imperdiet et enim sed porta. Donec ac erat eu est viverra convallis. Aliquam iaculis eget mi fringilla
-        aliquet. Duis efficitur neque a dui aliquam pulvinar. Ut efficitur ullamcorper felis non maximus. Donec ultrices varius feugiat. Proin lobortis nibh sed urna dignissim consectetur.
-      </p>
-      <p>
-        Sed sit amet viverra massa. Praesent maximus, nisl sed aliquam hendrerit, massa nunc faucibus mi, ut volutpat eros nisl in ex. Curabitur pellentesque ex ut eros tempus varius sagittis sodales nisl. Mauris vulputate id nisi id ultricies. Quisque et ante
-        ante. Donec accumsan tellus risus, at sollicitudin odio elementum tincidunt. Mauris vitae leo vehicula, aliquet tortor ac, ultricies ante. Praesent at aliquet purus. In pharetra, augue eu vulputate lacinia, diam neque iaculis velit, quis tristique
-        elit neque at enim. Praesent ullamcorper dignissim sapien, et rutrum erat maximus vel.
-      </p>
-      <p>
-        Donec luctus id orci sed elementum. Duis pharetra neque vel purus interdum dapibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam placerat eros et ipsum posuere, ut bibendum erat varius. Donec luctus
-        est id risus efficitur posuere. Mauris et felis id leo malesuada commodo eu at enim. Sed posuere vulputate justo, eget tincidunt leo lobortis vel. Curabitur iaculis magna eu lacinia bibendum. Nullam finibus libero in dapibus dapibus. Etiam mollis
-        arcu sed nibh mollis, at sodales mauris pellentesque. Aenean sit amet ipsum sagittis dui tempus elementum.
-      </p>
-      <p>
-        Donec vulputate tempor neque non ultrices. Cras eu orci blandit, rhoncus enim sit amet, faucibus nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin convallis nisl id diam sollicitudin iaculis. Lorem
-        ipsum dolor sit amet, consectetur adipiscing elit. In posuere interdum est, et bibendum odio luctus id. Etiam in ligula facilisis, faucibus urna sed, convallis felis. Integer sed gravida orci. Integer facilisis at enim non tincidunt.
-      </p>
+      <!--
+      <img src="..." alt="Project 1" class="img-thumbnail">
+      <img src="..." alt="Project 2" class="img-thumbnail">
+      <img src="..." alt="Project 3" class="img-thumbnail">
+      -->
+      <div class="row">
+        <div class="col text-center projects">Project 1</div>
+        <div class="col text-center projects">Project 2</div>
+        <div class="col text-center projects">Project 3</div>
+        <div class="col text-center projects">Project 4</div>
+        <div class="col text-center projects">Project 5</div>
+        <div class="col text-center projects">Project 6</div>
+      </div>
+
+
     </div>
   </div>
 
@@ -140,7 +147,7 @@
   <!-- Bootstrap core JavaScript
     ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 </body>
